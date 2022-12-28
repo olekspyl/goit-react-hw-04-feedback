@@ -42,6 +42,8 @@ display: flex;
 justify-content: center; 
 font-size: 24px;
 font-weight: bold;
+
+
 `
 
 export const NotificationStyle = styled.p`
