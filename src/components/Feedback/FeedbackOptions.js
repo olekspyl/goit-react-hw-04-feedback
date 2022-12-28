@@ -1,21 +1,21 @@
 import React from "react";
-import { Button} from "../App.styled";
+import  {Button, FeedbackList, FeedbackItem} from "../App.styled";
 
 const FeedbackOptions = ({options, onLeaveFeedback}) => {
     return (
-        <ul> 
+        <FeedbackList> 
         {options.map((option, idx) => {
           return (
-            <li key={idx}>
+            <FeedbackItem key={idx}>
               <Button
                 type="button"
                 onClick={() => onLeaveFeedback(option)}>
                 {option}
               </Button>
-            </li>
+            </FeedbackItem>
           );
         })}
-        </ul>
+        </FeedbackList>
     )
 }
 
