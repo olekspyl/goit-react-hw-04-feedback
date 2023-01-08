@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import  {Button, FeedbackList, FeedbackItem} from "../App.styled";
 
 const FeedbackOptions = ({options, onLeaveFeedback}) => {
@@ -17,6 +18,11 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
         })}
         </FeedbackList>
     )
+}
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired, 
+  onLeaveFeedback: PropTypes.func.isRequired,
 }
 
 export default FeedbackOptions;
