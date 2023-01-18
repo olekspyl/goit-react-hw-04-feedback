@@ -1,18 +1,14 @@
 import React from "react";
-import { Component } from "react";
 import {SectionStyle} from "../App.styled"
 
-class Section extends Component {
-    render() {
-        return (
+export default function Section({title, children}) {
+  return (
             <section>
-            <SectionStyle>{this.props.title}</SectionStyle>
-                {this.props.children}
-                </section>
+            <SectionStyle>{title}</SectionStyle>
+                {children}
+            </section>
         )
-    }
-}
+};
 
-export default Section;
 
 

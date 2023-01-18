@@ -4,7 +4,7 @@ import {NotificationStyle} from "../App.styled"
 
 const Notification = ({ message}) => {
     return (
-    <  NotificationStyle>{message}</  NotificationStyle>
+    < NotificationStyle>{message}</ NotificationStyle>
           )
 
 }
